@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Key : MonoBehaviour
 {
-    private PlayerController _player;
+    private PlayerController _playerController;
     private Inventory _inventory;
 
 
@@ -11,23 +11,23 @@ public class Key : MonoBehaviour
     {
         if (collision.CompareTag("Interact"))
         {
-            _player = collision.GetComponentInParent<PlayerController>();
+            _playerController = collision.GetComponentInParent<PlayerController>();
             _inventory = collision.GetComponentInParent<Inventory>();
             Debug.Log("Interacting");
 
-            _player.OnInteract += PickUp;
+            _playerController.OnInteract += PickUp;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        _player.OnInteract -= PickUp;
+        _playerController.OnInteract -= PickUp;
     }
 
-    private void PickUp()
+    public void PickUp()
     {
         _inventory.AddKey();
-        _player.OnInteract -= PickUp;
+        _playerController.OnInteract -= PickUp;
         Destroy(gameObject);
     }
 

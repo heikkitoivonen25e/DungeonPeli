@@ -1,12 +1,15 @@
 using UnityEngine;
 using System;
-using UnityEngine.UI;
-using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
 
     public Action OnInteract;
+
+    private void Awake()
+    {
+        
+    }
 
     public void Interact()
     {
