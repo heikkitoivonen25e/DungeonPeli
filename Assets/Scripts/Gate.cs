@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class Gate : MonoBehaviour
 {
-    public Inventory inventory;
+    [SerializeField] private Inventory inventory;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.CompareTag("Player") && inventory.hasKey == true)
+
+        if (other.gameObject.CompareTag("Player") && inventory.hasKey == true)
         {
             Destroy(gameObject);
         }
