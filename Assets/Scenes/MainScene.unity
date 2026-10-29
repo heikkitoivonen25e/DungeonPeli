@@ -195,6 +195,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5572360566301725721, guid: 1231acb6f0d4d9b438b8d0ba712cab83, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7556308053572241661, guid: 1231acb6f0d4d9b438b8d0ba712cab83, type: 3}
       propertyPath: hasKey
       value: 0
@@ -768,7 +772,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8964614786522062548, guid: a00dbfd10cde9da469c7f16d0fa94f0a, type: 3}
       propertyPath: m_Speed
-      value: 2
+      value: 2.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5472,7 +5476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af79f2829aa40be4faa864f3674d64b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Inventory
-  hasKey: 1
+  hasKey: 0
 --- !u!1 &1433604763
 GameObject:
   m_ObjectHideFlags: 0
