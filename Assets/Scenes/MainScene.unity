@@ -199,8 +199,7 @@ PrefabInstance:
       propertyPath: hasKey
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7556308053572241661, guid: 1231acb6f0d4d9b438b8d0ba712cab83, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6749908662808798277, guid: 1231acb6f0d4d9b438b8d0ba712cab83, type: 3}
     m_AddedGameObjects:
@@ -766,6 +765,10 @@ PrefabInstance:
     - target: {fileID: 8212443429926628760, guid: a00dbfd10cde9da469c7f16d0fa94f0a, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8964614786522062548, guid: a00dbfd10cde9da469c7f16d0fa94f0a, type: 3}
+      propertyPath: m_Speed
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5730,7 +5733,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -5839,7 +5842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af79f2829aa40be4faa864f3674d64b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Inventory
-  hasKey: 1
+  hasKey: 0
 --- !u!1001 &1950421965
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6327,7 +6330,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5655478485867235518, guid: 82c5282e6565e1e408360706e838699b, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7955533735481958466, guid: 82c5282e6565e1e408360706e838699b, type: 3}
       propertyPath: inventory
