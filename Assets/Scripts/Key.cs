@@ -3,16 +3,15 @@ using UnityEngine;
 
 public class Key : MonoBehaviour
 {
-    private PlayerController _playerController;
-    private Inventory _inventory;
+    [SerializeField] private PlayerController _playerController;
+    [SerializeField] private Inventory _inventory;
 
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Interact"))
         {
-            _playerController = collision.GetComponentInParent<PlayerController>();
-            _inventory = collision.GetComponentInParent<Inventory>();
+            // _playerController = collision.GetComponentInParent<PlayerController>();
             Debug.Log("Interacting");
 
             _playerController.OnInteract += PickUp;
