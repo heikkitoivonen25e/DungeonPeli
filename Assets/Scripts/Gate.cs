@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Gate : MonoBehaviour
 {
-    public Inventory inventory;
+    [SerializeField] private Inventory inventory;
 
     private void OnCollisionEnter2D(Collision2D other)
     {
